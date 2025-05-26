@@ -79,9 +79,9 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="text-center text-xs text-white/60 mt-12">
-        &copy; {new Date().getFullYear()} B&W Forklift Training Center LLC. All rights reserved.
-      </div>
+      <div className="text-center text-xs text-white/80 mt-12">
+  &copy; {new Date().getFullYear()} B&W Forklift Training Center LLC. All rights reserved.
+</div>
     </footer>
   );
 }
