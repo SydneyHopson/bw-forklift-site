@@ -26,7 +26,7 @@ export default function AboutSection() {
           href="/about"
           className="inline-block bg-[#d04a00] hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition"
         >
-          Learn More
+          Learn more about our training center and mission
         </Link>
       </div>
     </section>
