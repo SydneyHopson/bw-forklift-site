@@ -34,14 +34,39 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium text-[#191308]">
-          <Link href="/services" className="hover:text-[#d04a00] transition-colors">Services</Link>
-          <Link href="/about" className="hover:text-[#d04a00] transition-colors">About</Link>
-          <Link href="/re-certify" className="hover:text-[#d04a00] transition-colors">Re-Certify</Link>
-          <Link href="/sign-up" className="hover:text-[#d04a00] transition-colors">Book Training</Link>
-          <Link href="/contact" className="hover:text-[#d04a00] transition-colors">Contact</Link>
+          <Link
+            href="/services"
+            className="hover:text-[#d04a00] transition-colors focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Services
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-[#d04a00] transition-colors focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            About
+          </Link>
+          <Link
+            href="/re-certify"
+            className="hover:text-[#d04a00] transition-colors focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Re-Certify
+          </Link>
           <Link
             href="/sign-up"
-            className="bg-[#d04a00] hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-semibold shadow transition-colors"
+            className="hover:text-[#d04a00] transition-colors focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Book Training
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-[#d04a00] transition-colors focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Contact
+          </Link>
+          <Link
+            href="/sign-up"
+            className="bg-[#d04a00] hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-semibold shadow transition-colors focus:outline  focus:outline-offset-2 focus:outline-white"
           >
             Register
           </Link>
@@ -59,14 +84,39 @@ export default function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-inner px-4 py-4 space-y-4 text-sm font-medium text-[#191308]">
-          <Link href="/services" className="block hover:text-[#d04a00]">Services</Link>
-          <Link href="/about" className="block hover:text-[#d04a00]">About</Link>
-          <Link href="/re-certify" className="block hover:text-[#d04a00]">Re-Certify</Link>
-          <Link href="/sign-up" className="block hover:text-[#d04a00]">Book Training</Link>
-          <Link href="/contact" className="block hover:text-[#d04a00]">Contact</Link>
+          <Link
+            href="/services"
+            className="block hover:text-[#d04a00] focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Services
+          </Link>
+          <Link
+            href="/about"
+            className="block hover:text-[#d04a00] focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            About
+          </Link>
+          <Link
+            href="/re-certify"
+            className="block hover:text-[#d04a00] focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Re-Certify
+          </Link>
           <Link
             href="/sign-up"
-            className="block bg-[#d04a00] hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-semibold text-center transition"
+            className="block hover:text-[#d04a00] focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Book Training
+          </Link>
+          <Link
+            href="/contact"
+            className="block hover:text-[#d04a00] focus:outline  focus:outline-[#d04a00] rounded"
+          >
+            Contact
+          </Link>
+          <Link
+            href="/sign-up"
+            className="block bg-[#d04a00] hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-semibold text-center transition focus:outline  focus:outline-offset-2 focus:outline-white"
           >
             Register
           </Link>

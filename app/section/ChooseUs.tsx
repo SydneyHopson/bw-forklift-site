@@ -39,7 +39,7 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function ChooseUs() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">

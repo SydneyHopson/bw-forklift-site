@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -25,21 +26,11 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>
-              <Link href="/" className="hover:text-[#d04a00] transition">Home</Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-[#d04a00] transition">About</Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-[#d04a00] transition">Services</Link>
-            </li>
-            <li>
-              <Link href="/re-certify" className="hover:text-[#d04a00] transition">Re-Certify</Link>
-            </li>
-            <li>
-              <Link href="/sign-up" className="hover:text-[#d04a00] transition">Book Training</Link>
-            </li>
+            <li><Link href="/" className="hover:text-[#d04a00] transition">Home</Link></li>
+            <li><Link href="/about" className="hover:text-[#d04a00] transition">About</Link></li>
+            <li><Link href="/services" className="hover:text-[#d04a00] transition">Services</Link></li>
+            <li><Link href="/re-certify" className="hover:text-[#d04a00] transition">Re-Certify</Link></li>
+            <li><Link href="/sign-up" className="hover:text-[#d04a00] transition">Book Training</Link></li>
           </ul>
         </div>
 
@@ -52,7 +43,32 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center text-xs text-gray-400 mt-12">
+      {/* Payment & Trust Badges */}
+<div className="mt-16 flex flex-col md:flex-row justify-center items-center gap-8">
+  <Image
+    src="/images/footer/vosb.png"
+    alt="Veteran Owned Small Business"
+    className="w-28 h-auto" // ~112px wide
+    width={112}
+    height={112}
+  />
+  <Image
+    src="/images/footer/acceptedpayments.png"
+    alt="Accepted Payment Methods"
+    className="w-70 h-auto" // ~176px wide
+    width={120}
+    height={64}
+  />
+  <Image
+    src="/images/footer/paypal.png"
+    alt="PayPal Verified"
+    className="w-28 h-auto" // ~112px wide
+    width={112}
+    height={112}
+  />
+</div>
+
+      <div className="text-center text-xs text-gray-800 mt-12">
         &copy; {new Date().getFullYear()} B&W Forklift Training Center LLC. All rights reserved.
       </div>
     </footer>

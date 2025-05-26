@@ -1,72 +1,67 @@
 'use client';
 
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
-
-const faqs = [
+const features = [
   {
-    question: 'Do I need prior experience to get certified?',
-    answer:
-      'No experience is necessary. Our training is designed for both beginners and experienced operators. We cover everything from OSHA rules to hands-on operation.',
+    icon: '🕒',
+    title: 'Same-Day Certification',
+    description:
+      'Complete your training and walk out with your official forklift operator card the very same day. No delays. No downtime.',
   },
   {
-    question: 'How long is my forklift certification valid?',
-    answer:
-      'Forklift certification is valid for 3 years in accordance with OSHA Regulation 29 CFR 1910.178. We offer online re-certification when it’s time to renew.',
+    icon: '🎓',
+    title: 'OSHA-Compliant Training',
+    description:
+      'All our programs are fully aligned with OSHA reg (29-CFR 1910.178) to ensure legal, safe, and certified forklift operation.',
   },
   {
-    question: 'Is online re-certification accepted?',
-    answer:
-      'Yes. Our online re-certification is designed for previously certified operators and is OSHA-compliant for corporate teams or individual workers.',
+    icon: '💻',
+    title: 'Online & In-Person Options',
+    description:
+      'We offer flexible scheduling with both remote and classroom-based training, tailored to your corporate needs.',
   },
   {
-    question: 'Do you offer group or corporate training packages?',
-    answer:
-      'Absolutely. We provide on-site and remote training options for corporate groups. Volume discounts and scheduling flexibility are available.',
+    icon: '🧑🏽‍🏫',
+    title: 'Small Class Sizes',
+    description:
+      'We cap our class sizes to ensure personalized, focused instruction for every student — maximizing skill retention.',
   },
   {
-    question: 'Do you provide documentation after completion?',
-    answer:
-      'Yes. You’ll receive a Certificate of Completion and a wallet card valid for 3 years upon passing the evaluation.',
+    icon: '🏆',
+    title: '25+ Years Experience',
+    description:
+      'Our certified instructors have decades of real-world warehouse and forklift training experience in industrial environments.',
+  },
+  {
+    icon: '🎖️',
+    title: 'Veteran Discounts',
+    description:
+      'We proudly support those who served by offering special pricing and priority access to all veterans enrolling in our programs.',
   },
 ];
 
-export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleIndex = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
+export default function ChooseUs() {
   return (
-    <section className="bg-white py-24 px-6" id="faq">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-center font-extrabold text-[#d04a00] mb-12">
-          Frequently Asked Questions
+    <section className="bg-white py-16 px-4">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#d04a00] mb-12">
+          Why Choose B&W Forklift Training?
         </h2>
 
-        <div className="space-y-6">
-          {faqs.map((faq, index) => (
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-left">
+          {features.map((feature, index) => (
             <div
               key={index}
-              className="border border-orange-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              className="bg-white border border-gray-200 hover:border-[#d04a00] rounded-xl p-6 shadow-sm hover:shadow-lg group transition-all duration-300"
             >
-              <button
-                onClick={() => toggleIndex(index)}
-                className="w-full flex items-center justify-between text-left px-6 py-4 bg-[#fff7f2] text-[#d04a00] font-semibold text-lg focus:outline-none"
-              >
-                {faq.question}
-                <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : 'rotate-0'
-                  }`}
-                />
-              </button>
-              {openIndex === index && (
-                <div className="px-6 pb-5 text-gray-700 text-base bg-white">
-                  {faq.answer}
-                </div>
-              )}
+              <div className="text-4xl mb-4 transition-transform duration-300 group-hover:scale-110">
+                {feature.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-[#d04a00] transition-colors">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors mt-2">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
