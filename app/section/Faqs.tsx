@@ -53,7 +53,7 @@ export default function Faqs() {
             >
               <button
                 onClick={() => toggleIndex(index)}
-                className="w-full flex items-center justify-between text-left px-6 py-4 bg-[#fff7f2] text-[#d04a00] font-semibold text-lg focus:outline-none"
+                className="w-full flex items-center justify-between text-left px-6 py-4 bg-[#fff7f2] text-[#9a2e00] font-semibold text-lg focus:outline-none"
               >
                 {faq.question}
                 <ChevronDown

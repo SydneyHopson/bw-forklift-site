@@ -1,10 +1,17 @@
 'use client';
 
 import Header from '../section/Headers';
-import { Award, ShieldCheck, Truck, Users } from 'lucide-react';
-import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
 import Footer from '../section/Footer';
+import Link from 'next/link';
+import { Award, ShieldCheck, Truck, Users } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us | B&W Forklift Training Center',
+  description:
+    'Learn about B&W Forklift Training Center — 25+ years of OSHA-compliant training experience, hands-on instruction, and career-ready certification.',
+};
 
 export default function AboutPage() {
   const videos = [
@@ -43,7 +50,9 @@ export default function AboutPage() {
 
           <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
             <div className="bg-[#d04a00]/80 text-white rounded-xl px-6 py-5 text-center max-w-2xl backdrop-blur-sm shadow-lg">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">About Us</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
+                About Us
+              </h1>
               <p className="text-base md:text-lg">
                 Over 25 years of forklift and safety training experience, empowering workers and companies to stay OSHA-compliant and confident on the job.
               </p>
@@ -120,9 +129,8 @@ export default function AboutPage() {
             href="/sign-up"
             className="inline-block bg-[#d04a00] hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg transition"
           >
-            Book Your Training
+            Book Your Forklift Training Now
           </Link>
-          
         </section>
       </main>
       <Footer />
