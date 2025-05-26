@@ -11,13 +11,13 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">B&W Forklift Training Center</h3>
-          <p className="flex justify-center md:justify-start items-center gap-2 mb-2 text-sm text-gray-300">
+          <p className="flex justify-center md:justify-start items-center gap-2 mb-2 text-sm text-white/80">
             <MapPin className="w-4 h-4" /> Stone Mountain, GA
           </p>
-          <p className="flex justify-center md:justify-start items-center gap-2 mb-2 text-sm text-gray-300">
+          <p className="flex justify-center md:justify-start items-center gap-2 mb-2 text-sm text-white/80">
             <Phone className="w-4 h-4" /> (770) 294-1987
           </p>
-          <p className="flex justify-center md:justify-start items-center gap-2 text-sm text-gray-300">
+          <p className="flex justify-center md:justify-start items-center gap-2 text-sm text-white/80">
             <Mail className="w-4 h-4" /> bwforklifttrainingcenter@gmail.com
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-white/80">
             <li>
               <Link href="/" className="hover:text-[#d04a00] transition">Home</Link>
             </li>
@@ -47,7 +47,7 @@ export default function Footer() {
         {/* Message */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Committed to Safety</h3>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm text-white/80">
             We are dedicated to providing OSHA-compliant forklift certification and re-certification. Proudly serving Georgia and surrounding areas with hands-on training built for real-world success.
           </p>
         </div>
@@ -65,8 +65,8 @@ export default function Footer() {
         <Image
           src="/images/footer/acceptedpayments.png"
           alt="Accepted Payment Methods"
-          className="w-70 h-auto"
-          width={120}
+          className="w-40 h-auto"
+          width={160}
           height={64}
         />
         <Image
@@ -78,7 +78,8 @@ export default function Footer() {
         />
       </div>
 
-      <div className="text-center text-xs text-gray-800 mt-12">
+      {/* Copyright */}
+      <div className="text-center text-xs text-white/60 mt-12">
         &copy; {new Date().getFullYear()} B&W Forklift Training Center LLC. All rights reserved.
       </div>
     </footer>
