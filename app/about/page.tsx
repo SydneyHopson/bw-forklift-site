@@ -5,13 +5,6 @@ import Footer from '../section/Footer';
 import Link from 'next/link';
 import { Award, ShieldCheck, Truck, Users } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'About Us | B&W Forklift Training Center',
-  description:
-    'Learn about B&W Forklift Training Center — 25+ years of OSHA-compliant training experience, hands-on instruction, and career-ready certification.',
-};
 
 export default function AboutPage() {
   const videos = [
