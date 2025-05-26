@@ -2,7 +2,8 @@
 
 import AboutSection from './section/About';
 import WhyChooseUs from './section/ChooseUs'
-import FaqSection from './section/Faqs';
+import Faqs from './section/Faqs';
+
 
 import Footer from './section/Footer';
 import Headers from './section/Headers';
@@ -25,7 +26,7 @@ export default function HomePage() {
       <ServicesSection />
       <AboutSection />
       <Likes />
-      <FaqSection />
+      <Faqs/>
       <Footer />
       
     </>
